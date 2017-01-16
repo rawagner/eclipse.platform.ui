@@ -30,6 +30,7 @@ public class UIEventHandler implements EventHandler {
 
 	@Override
 	public void handleEvent(final Event event) {
+		System.out.println("Event is:" +event);
 		if (uiSync == null)
 			eventHandler.handleEvent(event);
 		else {
